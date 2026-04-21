@@ -10,6 +10,93 @@ By analyzing patterns such as repeated failed logins, successful authentication 
 
 ---
 
+##  Investigation Evidence
+
+### 1. Log Ingestion Validation
+
+<p align="center">
+  <img src="./01-log-ingestion-o365-azure.png" width="800">
+</p>
+
+Validated ingestion and normalization of authentication logs from O365 and Azure AD.
+
+**Key Insight:** Ensuring accurate log ingestion is critical, as detection quality depends entirely on reliable and complete authentication data.
+
+---
+
+### 2. Brute Force Detection (Failed Logins)
+
+<p align="center">
+  <img src="./02-brute-force-failed-logins.png" width="800">
+</p>
+
+Identified repeated failed authentication attempts targeting specific user accounts.
+
+**Key Insight:** A high volume of failed logins from a single source indicates brute force or password spraying activity.
+
+---
+
+### 3. Top Attacking Source IPs
+
+<p align="center">
+  <img src="./03-top-source-ips-failed-logins.png" width="800">
+</p>
+
+Analyzed source IPs generating the highest number of failed authentication attempts.
+
+**Key Insight:** Concentrated activity from specific IPs suggests attacker-controlled infrastructure targeting multiple accounts.
+
+---
+
+### 4. Failed → Successful Login Pattern
+
+<p align="center">
+  <img src="./04-failed-to-success-login-pattern.png" width="800">
+</p>
+
+Detected successful authentication events following multiple failed attempts.
+
+**Key Insight:** This pattern strongly indicates credential compromise, where an attacker successfully gains access after repeated failures.
+
+---
+
+### 5. User & IP Correlation
+
+<p align="center">
+  <img src="./05-user-ip-correlation.png" width="800">
+</p>
+
+Correlated user accounts with source IP addresses across authentication events.
+
+**Key Insight:** Multiple users targeted from the same IP indicates coordinated attack behavior or password spraying attempts.
+
+---
+
+### 6. Geolocation Analysis
+
+<p align="center">
+  <img src="./06-geolocation-analysis.png" width="800">
+</p>
+
+Analyzed geographic origin of authentication attempts.
+
+**Key Insight:** Login attempts from unusual or unexpected locations indicate potential unauthorized access.
+
+---
+
+### 7. Alert Triggering
+
+<p align="center">
+  <img src="./07-alert-triggered.png" width="800">
+</p>
+
+Detection logic triggered alerts based on defined thresholds and suspicious patterns.
+
+**Key Insight:** Automated alerting enables early detection and response to credential compromise before further attack progression.
+
+---
+
+
 ## Detection Logic Summary
 
 The detection is built around identifying a sequence of authentication events that indicate potential credential compromise.
