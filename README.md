@@ -20,7 +20,7 @@ By analyzing patterns such as repeated failed logins, successful authentication 
 
 Validated ingestion and normalization of authentication logs from O365 and Azure AD.
 
-**Key Insight:** Ensuring accurate log ingestion is critical, as detection quality depends entirely on reliable and complete authentication data.
+**Key Insight:** Authentication logs are successfully ingested and ready for analysis.
 
 ---
 
@@ -44,7 +44,7 @@ Identified repeated failed authentication attempts targeting specific user accou
 
 Analyzed source IPs generating the highest number of failed authentication attempts.
 
-**Key Insight:** Concentrated activity from specific IPs suggests attacker-controlled infrastructure targeting multiple accounts.
+**Key Insight:** Multiple login attempts from the same IP suggest coordinated targeting of user accounts.
 
 ---
 
