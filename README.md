@@ -4,9 +4,7 @@
 
 ## Overview  
 
-This project focuses on detecting credential compromise by analyzing authentication activity in a Splunk environment. The goal is to identify suspicious login behavior that may indicate an attacker has gained access to valid user credentials.
-
-By analyzing patterns such as repeated failed logins, successful authentication after failures, and abnormal login locations, this project demonstrates how account takeover activity can be identified early in a SOC environment.
+This project focuses on detecting credential compromise by analyzing authentication activity in a Splunk environment. The goal is to identify suspicious login behavior that may indicate an attacker has gained access to valid user credentials. By analyzing patterns such as repeated failed logins, successful authentication after failures, and abnormal login locations, this project demonstrates how account takeover activity can be identified early in a SOC environment.
 
 ---
 
