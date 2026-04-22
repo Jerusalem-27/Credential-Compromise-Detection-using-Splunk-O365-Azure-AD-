@@ -15,7 +15,7 @@ By analyzing patterns such as repeated failed logins, successful authentication 
 ### 1. Log Ingestion Validation
 
 <p align="center">
-  <img src="./01-log-ingestion-o365-azure.png" width="800">
+  <img src="./Evidence/01-log-ingestion-o365-azure.png" width="800">
 </p>
 
 Validated ingestion and normalization of authentication logs from O365 and Azure AD.
@@ -27,7 +27,7 @@ Validated ingestion and normalization of authentication logs from O365 and Azure
 ### 2. Brute Force Detection (Failed Logins)
 
 <p align="center">
-  <img src="./02-brute-force-failed-logins.png" width="800">
+  <img src="./Evidence/02-brute-force-failed-logins.png" width="800">
 </p>
 
 Identified repeated failed authentication attempts targeting specific user accounts.
@@ -39,7 +39,7 @@ Identified repeated failed authentication attempts targeting specific user accou
 ### 3. Top Attacking Source IPs
 
 <p align="center">
-  <img src="./03-top-source-ips-failed-logins.png" width="800">
+  <img src="./Evidence/03-top-source-ips-failed-logins.png" width="800">
 </p>
 
 Analyzed source IPs generating the highest number of failed authentication attempts.
@@ -51,7 +51,7 @@ Analyzed source IPs generating the highest number of failed authentication attem
 ### 4. Failed → Successful Login Pattern
 
 <p align="center">
-  <img src="./04-failed-to-success-login-pattern.png" width="800">
+  <img src="./Evidence/04-failed-to-success-login-pattern.png" width="800">
 </p>
 
 Detected successful authentication events following multiple failed attempts.
@@ -63,7 +63,7 @@ Detected successful authentication events following multiple failed attempts.
 ### 5. User & IP Correlation
 
 <p align="center">
-  <img src="./05-user-ip-correlation.png" width="800">
+  <img src="./Evidence/05-user-ip-correlation.png" width="800">
 </p>
 
 Correlated user accounts with source IP addresses across authentication events.
@@ -75,7 +75,7 @@ Correlated user accounts with source IP addresses across authentication events.
 ### 6. Geolocation Analysis
 
 <p align="center">
-  <img src="./06-geolocation-analysis.png" width="800">
+  <img src="./Evidence/06-geolocation-analysis.png" width="800">
 </p>
 
 Analyzed geographic origin of authentication attempts.
@@ -87,7 +87,7 @@ Analyzed geographic origin of authentication attempts.
 ### 7. Alert Triggering
 
 <p align="center">
-  <img src="./07-alert-triggered.png" width="800">
+  <img src="./Evidence/07-alert-triggered.png" width="800">
 </p>
 
 Detection logic triggered alerts based on defined thresholds and suspicious patterns.
