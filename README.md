@@ -190,8 +190,7 @@ Configured Splunk alerts to detect credential compromise patterns, enabling:
 
 ---
 
-## Skills Demonstrated  
-- Threat Detection 
+## Skills Demonstrated   
 - Threat Hunting  
 - Authentication Log Analysis  
 - Behavioral Correlation  
