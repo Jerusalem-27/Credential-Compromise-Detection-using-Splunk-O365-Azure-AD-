@@ -20,7 +20,6 @@ By analyzing patterns such as repeated failed logins, successful authentication 
 
 Validated ingestion and normalization of authentication logs from O365 and Azure AD.
 
-**Key Insight:** Authentication logs are successfully ingested and ready for analysis.
 
 ---
 
@@ -32,8 +31,6 @@ Validated ingestion and normalization of authentication logs from O365 and Azure
 
 Identified repeated failed authentication attempts targeting specific user accounts.
 
-**Key Insight:** A high volume of failed logins from a single source indicates brute force or password spraying activity.
-
 ---
 
 ### 3. Top Attacking Source IPs
@@ -43,8 +40,6 @@ Identified repeated failed authentication attempts targeting specific user accou
 </p>
 
 Analyzed source IPs generating the highest number of failed authentication attempts.
-
-**Key Insight:** Multiple login attempts from the same IP suggest coordinated targeting of user accounts.
 
 ---
 
@@ -56,8 +51,6 @@ Analyzed source IPs generating the highest number of failed authentication attem
 
 Detected successful authentication events following multiple failed attempts.
 
-**Key Insight:** This pattern strongly indicates credential compromise, where an attacker successfully gains access after repeated failures.
-
 ---
 
 ### 5. User & IP Correlation
@@ -67,8 +60,6 @@ Detected successful authentication events following multiple failed attempts.
 </p>
 
 Correlated user accounts with source IP addresses across authentication events.
-
-**Key Insight:** Multiple users targeted from the same IP indicates coordinated attack behavior or password spraying attempts.
 
 ---
 
@@ -80,8 +71,6 @@ Correlated user accounts with source IP addresses across authentication events.
 
 Analyzed geographic origin of authentication attempts.
 
-**Key Insight:** Login attempts from unusual or unexpected locations indicate potential unauthorized access.
-
 ---
 
 ### 7. Alert Triggering
@@ -91,8 +80,6 @@ Analyzed geographic origin of authentication attempts.
 </p>
 
 Detection logic triggered alerts based on defined thresholds and suspicious patterns.
-
-**Key Insight:** Automated alerting enables early detection and response to credential compromise before further attack progression.
 
 ---
 
